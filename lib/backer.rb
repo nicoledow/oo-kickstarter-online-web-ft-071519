@@ -14,14 +14,7 @@ class Backer
     @@all
   end
   
-  # def back_project(project)
-  #   @backed_projects << project
-  #   Project.all.each do |this_project|
-  #     if this_project == project
-  #       this_project.backers << self
-  #     end
-  #   end
-  # end
+  
   def back_project(new_project)
     @backed_projects << new_project
     
