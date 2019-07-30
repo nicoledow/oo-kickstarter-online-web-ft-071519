@@ -14,10 +14,14 @@ class Project
     @@all
   end
   
-  def add_backer(backer)
-    @backers << backer
+  def add_backer(new_backer)
+    @backers << new_backer
     
-    
+    Backer.all.each do |backer|
+      if backer == new_backer
+        backer.
+      end
+    end
   end
   
 end
