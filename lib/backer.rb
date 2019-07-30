@@ -16,9 +16,9 @@ class Backer
   
   def back_project(project)
     @backed_projects << project
-    Project.all.each do |proj|
-      if proj == project
-        
+    Project.all.each do |this_project|
+      if this_project == project
+        this_project.backers << self
       end
     end
   end
