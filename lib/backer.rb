@@ -22,6 +22,15 @@ class Backer
   #     end
   #   end
   # end
+  def backed_projects(new_project)
+    @backed_projects << new_project
+    
+    Project.all.each do |project|
+      if project == new_project
+        project.backers << self
+      end
+    end
+  end
   
   
 end
