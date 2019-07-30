@@ -10,6 +10,10 @@ class Project
     @@all << self
   end
   
+  def self.all
+    @@all
+  end
+  
   def add_backer(backer)
     @backers << backer
   end
