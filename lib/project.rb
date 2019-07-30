@@ -19,7 +19,7 @@ class Project
     
     Backer.all.each do |backer|
       if backer == new_backer
-        backer.
+        backer.backed_projects
       end
     end
   end
